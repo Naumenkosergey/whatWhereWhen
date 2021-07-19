@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_znatok.css"
+          th:href="@{/css/style_statistic.css}">
+    <title>ChGK Fantasy - Statistics Page</title>
+</head>
+<body>
+
+<div class="header-row">
+
+    <header th:insert="blocks/header::header"></header>
+</div>
+
+<div class="body-middle-area">
+    <div class="left-menu">
+        <div class="widget">
+            <navigate th:insert="blocks/navigation::navigate"></navigate>
+        </div>
+    </div>
+
+    <!--<div class="main-content">-->
+        <!--<div class="list">-->
+            <!--<div class="stats-expert">-->
+                <!--<div class="leftpart">-->
+                    <table>
+                        <tr th:each="znatok : ${znatoks}">
+                            <!--<td><img th:src="material/${znatok.photo}"></td>-->
+                            <td th:text="${znatok.name} "></td>
+                            <td th:text="${znatok.power}"></td>
+                            <td th:text="${znatok.price}"></td>
+                        </tr>
+                    </table>
+                <!--</div>-->
+                <!--<div class="price">$10k</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<tbody>-->
+    <!--<tr th:each="user: ${users}">-->
+    <!--<td th:text="${user.id}"></td>-->
+    <!--<td th:text="${user.login}"></td>-->
+    <!--<td th:text="${user.password}"></td>-->
+    <!--<td th:hraf="@{user-update/{id}(id=${user.id})}">Edit</td>-->
+    <!--<td th:hraf="@{user-delete/{id}(id=${user.id})}">Delete</td>-->
+
+    <!--</tr>-->
+    <!--</tbody>-->
+
+    <!--<div class="main-content">-->
+    <!--<div th:each="znatok: ${znatoks}">-->
+    <!--<div class="list">-->
+    <!--<div class="stats-expert">-->
+    <!--<div class="leftpart">-->
+    <!--<div class="photo"><img th:src="material/${znatok.photo}"></div>-->
+    <!--<div class="name"><p th:text="${znatok.name} ${znatok.surname}</p></div>-->
+    <!--<div class="points"><p th:text="${znatok.power}"></p></div>-->
+    <!--</div>-->
+    <!--<div class="price"><p th:text="${znatok.price}k"></p></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<div th:switch="${users}">
+    <h2 th:case="null">no userfound!</h2>
+    <div th:case="*">
+        <h2>Users</h2>
+        <table border="2px" cellpadding="10px" cellspacing="0px">
+            <head>
+                <tr>
+                    <th>Id</th>
+                    <th>login</th>
+                    <th>password</th>
+                </tr>
+            </head>
+            <tbody>
+                <tr th:each="user: ${users}">
+                    <td th:text="${user.id}"></td>
+                    <td th:text="${user.login}"></td>
+                    <td th:text="${user.password}"></td>
+                    <td th:hraf="@{user-update/{id}(id=${user.id})}">Edit</td>
+                    <td th:hraf="@{user-delete/{id}(id=${user.id})}">Delete</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/user-create"> create user</a></p>
+</div>
+
+</body>
+</html>

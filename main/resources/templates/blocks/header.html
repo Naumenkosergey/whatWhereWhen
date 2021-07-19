@@ -1,0 +1,14 @@
+<div style="width: 100%; display: flex; align-items: center; flex-direction: row; justify-content: space-between;" th:fragment="header">
+    <div><a href="/"><img class="logo" src="Materials/owl-logo.png">
+        <p>ChGK Fantasy League</p></a></div>
+
+    <div style="display: inline-block">
+        <span  th:text="${autorizationuser}"></span>
+        <form action="logout" method="post">
+            <button style="padding: 10px; background: firebrick;
+            color: white;">
+                LogOut
+            </button>
+        </form>
+    </div>
+</div>

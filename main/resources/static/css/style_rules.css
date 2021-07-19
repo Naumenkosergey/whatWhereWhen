@@ -1,0 +1,23 @@
+.main-content > h1{
+	margin: 25px;
+	margin-bottom: 50px;
+	font-size: 60px;
+}
+
+.rules-list{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 500px;
+}
+
+.rules-list li {
+  
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+.rules-list a{
+	font-size: 25px;
+}

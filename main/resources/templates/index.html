@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_index.css" th:href="@{/css/style_index.css}">
+    <title>ChGK Fantasy - Home Page</title>
+</head>
+<body>
+
+<div class="header-row">
+    <header th:insert="blocks/header::header"></header>
+</div>
+
+<div class="body-middle-area">
+    <div class="left-menu">
+        <div class="widget">
+            <navigate th:insert="blocks/navigation::navigate"></navigate>
+
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="r1" class="big-rectangle">
+            <div>
+                <p style="font-size: 80px; margin: 40px;">ChGK Fantasy League</p>
+                <p style="font-size: 40px;">Неофициальное фэнтези</p>
+                <p style="font-size: 25px;">По игре "Что? Где? Когда?"</p>
+
+                <a href="/signUp">Зарегистрироваться</a>
+            </div>
+        </div>
+
+
+        <div id="r2" class="big-rectangle">
+            <div class="big-rect-text">
+                <p class="head-p">Соберите до 2 команд</p>
+                <p class="main-p">Выберите 3 знатоков и 1 команду</p>
+                <p class="main-p">на сумму до $100.000</p>
+                <a href="../TeamsPage/teams.html">Создать команду</a>
+            </div>
+
+            <div class="big-rect-img"><img src="Materials/team_example.png"></div>
+        </div>
+
+        <div id="r3" class="big-rectangle">
+            <div class="big-rect-img">
+                <img src="">
+            </div>
+
+            <div class="big-rect-text">
+                <p class="head-p">Смотрите "Что? Где? Когда?"</p>
+                <p class="main-p">И получайте баллы за игру знатоков</p>
+                <a href="../RulesPage/rules.html" style="width: 300px">Подробнее о получении баллов</a>
+            </div>
+        </div>
+
+        <div id="r4" class="big-rectangle">
+            <div class="big-rect-text">
+                <p class="head-p">Соревнуйтесь с друзьями</p>
+                <p class="main-p"></p>
+                <p class="main-p">В угадывании результатов игры</p>
+                <a href="../RatingPage/rating.html">Рейтинг игроков</a>
+            </div>
+
+            <div class="big-rect-img"><img src=""></div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

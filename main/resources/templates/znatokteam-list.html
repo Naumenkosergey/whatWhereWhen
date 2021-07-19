@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>знатоки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_znatok.css"
+          th:href="@{/css/style_znatok.css}">
+</head>
+<body>
+
+<div class="header-row">
+    <header th:insert="blocks/header::header"></header>
+</div>
+<div class="left-menu">
+    <div class="widget">
+        <navigate th:insert="blocks/navigation::navigate"></navigate>
+
+    </div>
+</div>
+
+<div class="switch-team-or-znatok">
+    <a href="/znatoks" ><h2>Список знатоков</h2></a>
+    <a href="/teamznatoks" ><h2>Список команд знатоков</h2></a>
+    <hr>
+</div>
+
+        <h1>Здесь должен быть список команд знатоков во глове с капитаном</h1>
+
+
+
+</div>
+
+</body>
+</html>

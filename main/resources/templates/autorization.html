@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChGK Fantasy - Register Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_registr.css" th:href="@{/css/style_registr.css}">
+
+</head>
+<body>
+<div class="header-register">
+    <a href="/"><img class="logo" src="Materials/owl-logo.png">
+        <p>ChGK Fantasy League</p></a>
+</div>
+<hr>
+<div class="main-content">
+    <form action="/signIn" method="post">
+        <div class="container">
+            <h1>Авторизация</h1>
+            <p>Заполните форму, чтобы войти в учетку</p>
+            <hr>
+
+            <label><b>Логин</b></label>
+            <input type="text" placeholder="Введите Логин" name="login" required>
+
+
+
+            <label><b>Пароль</b></label>
+            <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+
+            <hr>
+            <button type="submit" class="registerbtn">Войти</button>
+        </div>
+
+        <div class="container signin">
+            <a href="/signUp">Нет учетки? регистрируйся</a>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

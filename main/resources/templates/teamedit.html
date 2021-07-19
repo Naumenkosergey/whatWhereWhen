@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+	<link rel="stylesheet" type="text/css" href="../static/css/style_teamedit.css"
+		  th:href="@{/css/style_teamedit.css}">
+	<title>ChGK Fantasy - Teams</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class = "header-row">
+		<header th:insert="blocks/header::header"></header>
+	</div>
+
+	<div class="left-menu">
+		<div class="widget">
+			<navigate th:insert="blocks/navigation::navigate"></navigate>
+		</div>
+	</div>
+
+	<div class="body-middle-area">
+		<div class="main-content">
+			<div class="team">
+					<div class="team-header">
+						<div class="name-holder"><p style="">My team 1</p><img src="Materials/pencil.png"></div>
+						<div class="budget"><p style="color: black">Бюджет: &ensp;</p><p>$90k / $100k</p></div>
+					</div>
+
+
+
+					<div class="player-icons">
+						<div class="player-icon">
+							<img class="player-image" src="material/Alexandr-Starokaznikov.webp">
+							<p>Александр Староказников</p>
+							<p>Price:&ensp;$10k</p>
+							<div class="player-change-button-container"><a href="/znatoks" class="change-button">Заменить</a></div>
+						</div>
+						<div class="player-icon">
+							<img class="player-image" src="material/Nikita-Boroda.webp">
+							<p>Никита Борода</p>
+							<p>Price:&ensp;$20k</p>
+							<div class="player-change-button-container"><a href="/znatoks" class="change-button">Заменить</a></div>
+						</div>
+						<div class="player-icon">
+							<img class="player-image" src="material/Denis-Sulavko.webp">
+							<p>Денис Сулавко</p>
+							<p>Price:&ensp;$20k</p>
+							<div class="player-change-button-container"><a href="/znatoks" class="change-button">Заменить</a></div>
+						</div>
+					</div>
+
+
+
+					<div class="teams-icons">
+							<div class="team-icon">
+							<img class="team-image" src="material/Maria-Potapova.webp">
+							<p style="margin-bottom: 0px;">Команда</p>
+							<p style="margin-top: 0px;">Марии Потаповой</p>
+							<p>Price:&ensp;$40k</p>
+							<div class="player-change-button-container"><a href="/znatoks" class="change-button">
+								Заменить</a></div>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="list">
+			<div class="stats-expert">
+				<div class="leftpart">
+				<div class="photo"><img src="material/Valeria-Alexeichik.webp"></div>
+				<div class="name"><p>Валерия Алексейчик</p></div>
+				<div class="price">$10k</div>
+				</div>
+				<div class="add-button"><p>Добавить</p></div>
+			</div>
+			<div class="stats-expert">
+				<div class="leftpart">
+				<div class="photo"><img src="material/Valeria-Alexeichik.webp"></div>
+				<div class="name"><p>Валерия Алексейчик</p></div>
+				<div class="price">$10k</div>
+				</div>
+				<div class="add-button"><p>Добавить</p></div>
+			</div>
+			<div class="stats-expert">
+				<div class="leftpart">
+				<div class="photo"><img src="material/Valeria-Alexeichik.webp"></div>
+				<div class="name"><p>Валерия Алексейчик</p></div>
+				<div class="price">$10k</div>
+				</div>
+				<div class="add-button"><p>Добавить</p></div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

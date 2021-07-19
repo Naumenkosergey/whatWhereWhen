@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}">
+	<link rel="stylesheet" type="text/css" href="../static/css/style_rules.css" th:href="@{/css/style_rules.css}">
+	<title>ChGK Fantasy - Rules Page</title>
+</head>
+<body>
+
+<div class = "header-row">
+	<header th:insert="blocks/header::header"></header>
+</div>
+
+	<div class="body-middle-area">
+
+		<div class="left-menu">
+			<div class="widget">
+				<navigate th:insert="blocks/navigation::navigate"></navigate>
+			</div>
+		</div>
+	<div class="main-content">
+		<h1>Правила</h1>
+		<ul class="rules-list">
+			<li>
+				<a href="rules/teams_creation.html">Создание команд</a>
+			</li>
+			<li>
+				<a href="">Зачисление баллов</a>
+			</li>
+			<li>
+				<a href=""></a>
+			</li>
+			<li>
+				<a href=""></a>
+			</li>
+			<li>
+				<a href=""></a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+</body>
+</html>

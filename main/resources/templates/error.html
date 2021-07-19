@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/erorstyle.css" th:href="@{/css/erorstyle.css}"/>
+    <title>Error</title>
+    <!--<link href="../static/images/favicon.iso.ico" rel="shortcut icon" type="image/x-icon" th:href="@{/images/favicon.iso.ico}" />-->
+</head>
+<body>
+<div class="over"></div>
+<div class="mistake">oops...error</div>
+
+<div class="notfound" th:switch="${message}" >
+    <h2 th:case="null">страница не найдена</h2><br>
+    <div th:case="*"  ><h2 th:text="${message}"></h2></div><br>
+
+
+    <a th:href="${page}"> Вернуться на прошлую страницу..</a>
+    <a href="/">Перейти на главную страницу</a>
+
+</div>
+</body>
+</html>
+
